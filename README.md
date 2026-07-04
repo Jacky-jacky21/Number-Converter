@@ -22,5 +22,8 @@ Make sure you have **Python 3.x** installed.
 Clone the repository, open your terminal in the project folder, and run:
 
 ```bash
-# Starts the interactive menu
+# Option 1: Start the interactive menu
 python main.py
+
+# Option 2: Convert instantly using arguments
+python main.py --deztobin 42
