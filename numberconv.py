@@ -23,4 +23,11 @@ def decToHex(number):
         return hex(int(number)).replace("0x", "").upper()
     except ValueError:
         return ERRMSG
+    
+#Hexadecimal to Decimal
+def hexToDec(number):
+    try:
+        return str(int(number, 16))
+    except ValueError:
+        return ERRMSG
         

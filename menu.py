@@ -6,6 +6,7 @@ CONVERTER_MAP = {
     ("Decimal", "Binary"): numberconv.decToBin,
     ("Decimal", "Hexadecimal"): numberconv.decToHex,
     ("Binary", "Decimal"): numberconv.binToDec,
+    ("Hexadecimal", "Decimal"): numberconv.hexToDec,
     #If both are the same
     ("Decimal", "Decimal"): lambda x: x,
     ("Binary", "Binary"): lambda x: x,
@@ -66,4 +67,4 @@ def showMenu():
         print(f"\nConversion from {sourceSystem} to {targetSystem}")
         print(f"\nResult ({targetSystem}): {result}")
     else:
-        print(f"\n[Error] Conversion from {sourceSystem} to {targetSystem} is not supported yet!\n")
+        print(f"\n[Error] Conversion from {sourceSystem} to {targetSystem} is not supported yet!")
