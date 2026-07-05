@@ -10,6 +10,10 @@ A lightweight CLI tool to convert numbers between different numeral systems (Dec
 - **Dual Mode:** Use the interactive menu or pass arguments to convert instantly.
 - **Built-in Help:** Clean interface documentation using standard `--help`.
 - **Modular Code:** Separated logic, menu handling, and entry point for easy scaling.
+---
+
+- Decimal -> Binary
+- Binary -> Decimal
 
 ---
 
