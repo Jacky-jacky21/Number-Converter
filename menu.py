@@ -15,7 +15,7 @@ CONVERTER_MAP = {
 SYSTEM_NAMES = {
     "1": "Decimal",
     "2": "Binary",
-    "3": "Hexadecimal"
+    "3": "Hexadecimal",
 }
 
 
@@ -41,7 +41,12 @@ def showMenu():
     print("1) Decimal")
     print("2) Binary")
     print("3) Hexadecimal")
-    targetSelection = input("Please choose an option (1-3): ").strip()
+    print("4) Return")
+    targetSelection = input("Please choose an option (1-4): ").strip()
+
+    if targetSelection == "4":
+        print("\nBack to the source menu...")
+        return
 
     if targetSelection not in SYSTEM_NAMES:
         print("Invalid selection.")
@@ -58,6 +63,7 @@ def showMenu():
         convertFunktion = CONVERTER_MAP[search]
         
         result = convertFunktion(number)
-        print(f"\nResult ({targetSystem}): {result}\n")
+        print(f"\nConversion from {sourceSystem} to {targetSystem}")
+        print(f"\nResult ({targetSystem}): {result}")
     else:
         print(f"\n[Error] Conversion from {sourceSystem} to {targetSystem} is not supported yet!\n")
