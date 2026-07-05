@@ -1,9 +1,19 @@
 import argparse
 import sys
 
-def dezToBin(number):
+ERRMSG = "Error: wrong input!"
+
+#Decimal to binary
+def decToBin(number):
     try:
         return bin(int(number)).replace("0b", "")
     except ValueError:
-        return "Error: wrong input!"
+        return ERRMSG
 
+#Binary to Decimal
+def binToDec(number):
+    try:
+        return str(int(number, 2))
+    except ValueError:
+        return ERRMSG
+        
