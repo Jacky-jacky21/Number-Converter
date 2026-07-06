@@ -1,4 +1,4 @@
-# Number-Converter
+# Number-System-Converter
 ![Status](https://img.shields.io/badge/Status-Work%20in%20Progress-orange)
 
 A lightweight CLI tool to convert numbers between different numeral systems (Decimal, Binary, etc.). It works both as an interactive menu and via direct terminal arguments.
