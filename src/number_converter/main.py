@@ -2,7 +2,7 @@ import argparse
 from . import numberconv
 from . import menu
 
-__version__ = "1.1.0"
+__version__ = "1.1.1"
 
 def main():
     parser = argparse.ArgumentParser(

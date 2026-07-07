@@ -26,13 +26,26 @@ A lightweight CLI tool to convert numbers between different numeral systems (Dec
 ### Prerequisites
 Make sure you have **Python 3.x** installed.
 
-### Running the App
-Clone the repository, open your terminal in the project folder, and run:
+### Global Installation via Pip
+You can install the tool directly from PyPI:
 
+```bash
+pip install simple-number-converter
+```
+### Running the programm
+```bash
+# Option 1: Start the interactive menu
+numconv
+
+# Option 2: Convert instantly using arguments
+numconv --dectobin 42
+numconv -db 42
+```
+### 2. Running option
 ```bash
 # Option 1: Start the interactive menu
 python main.py
 
 # Option 2: Convert instantly using arguments
 python main.py --dectobin 42
-python main.py -db 42 
+python main.py -db 42
