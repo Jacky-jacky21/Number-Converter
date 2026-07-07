@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools>=61.0.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "simple-number-converter"  #
+version = "1.1.0"                  
+description = "A powerful CLI tool to convert numbers between different systems"
+readme = "README.md"
+authors = [
+    { name = "Jacky-jacky21" } 
+]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License", 
+    "Operating System :: OS Independent",
+]
+requires-python = ">=3.10"
+
+[project.scripts]
+numconv = "number_converter.main:main"
