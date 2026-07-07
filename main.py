@@ -3,7 +3,20 @@ import numberconv
 import menu
 
 def main():
-    parser = argparse.ArgumentParser(description="Simple Number-System-Converter.")
+    parser = argparse.ArgumentParser(
+        description=(
+            "=== Simple Number-Converter ===\n"
+            "A powerful CLI tool to convert numbers between different systems.\n"
+            "If no flags are provided, the interactive menu will open automatically. \n"
+        ), 
+    epilog=(
+            "Examples:\n"
+            "  python main.py --dectobin 42\n"
+            "  python main.py -dh 255\n\n"
+            "Created by Jacky-jacky21 (2026)."
+        ),
+    formatter_class=argparse.RawDescriptionHelpFormatter
+    )
     parser.add_argument("-db", "--dectobin", metavar="<DEC>", help="Convert Decimal to Binary", type=str)
     parser.add_argument("-dh", "--dectohex", metavar="<DEC>", help="Convert Decimal to Hexadecimal", type=str)
     parser.add_argument("-bd", "--bintodec", metavar="<BIN>", help="Convert Binary to Decimal", type=str)
@@ -19,7 +32,6 @@ def main():
         print(result)
 
     #dth
-    #TODO: Test it
     elif args.dectohex:
         result = numberconv.decToHex(args.dectohex)
         print(result)
@@ -30,19 +42,16 @@ def main():
         print(result)
 
     #bth
-    #TODO: Test it
     elif args.bintohex:
         result = numberconv.binToHex(args.bintohex)
         print(result)
 
     #htd
-    #TODO: Test it
     elif args.hextodec:
         result = numberconv.hexToDec(args.hextodec)
         print(result)
 
     #htb
-    #TODO: Test it
     elif args.hextobin:
         result = numberconv.hexToBin(args.hextobin)
         print(result)
