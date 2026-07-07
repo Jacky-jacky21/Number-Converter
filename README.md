@@ -34,4 +34,5 @@ Clone the repository, open your terminal in the project folder, and run:
 python main.py
 
 # Option 2: Convert instantly using arguments
-python main.py --deztobin 42
+python main.py --dectobin 42
+python main.py -db 42 
