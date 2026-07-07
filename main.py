@@ -2,6 +2,8 @@ import argparse
 import numberconv
 import menu
 
+__version__ = "1.0.0"
+
 def main():
     parser = argparse.ArgumentParser(
         description=(
@@ -13,7 +15,7 @@ def main():
             "Examples:\n"
             "  python main.py --dectobin 42\n"
             "  python main.py -dh 255\n\n"
-            "Created by Jacky-jacky21 (2026)."
+            f"Version: {__version__} | Created by Jacky-jacky21 (2026)."
         ),
     formatter_class=argparse.RawDescriptionHelpFormatter
     )
@@ -23,6 +25,7 @@ def main():
     parser.add_argument("-bh", "--bintohex", metavar="<BIN>", help="Convert Binary to Hexadecimal", type=str)
     parser.add_argument("-hd", "--hextodec", metavar="<HEX>", help="Convert Hexadecimal to Decimal", type=str)
     parser.add_argument("-hb", "--hextobin", metavar="<HEX>", help="Convert Hexadecimal to Binary", type=str)
+    parser.add_argument("-v", "--version", action="version", version=f"Number-Converter v{__version__}")
     args = parser.parse_args()
 
     #Convert immediately
